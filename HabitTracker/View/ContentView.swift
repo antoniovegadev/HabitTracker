@@ -12,26 +12,18 @@ struct ContentView: View {
     @State private var showingAddView = false
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(activities.items) { activity in
-                    NavigationLink(destination: DetailView(activities: activities, activity: activity)) {
-                        HStack {
-                            Text(activity.name)
-
-                            Spacer()
-                            
-                            Text("\(activity.streak) / \(activity.goal)")
+        GeometryReader { geo in
+            VStack(spacing: geo.size.width * 0.1) {
+                ForEach(0..<3) { _ in
+                    HStack(spacing: geo.size.width * 0.1) {
+                        ForEach(0..<2) { _ in
+                            CircleView(width: geo.size.width * 0.35, height: geo.size.width * 0.35)
                         }
                     }
                 }
             }
-            .navigationTitle("HabitTracker")
-            .navigationBarItems(trailing: Button(action: {
-                showingAddView = true
-            }, label: {
-                Image(systemName: "plus")
-            }))
+            .frame(width: geo.size.width, height: geo.size.height, alignment: .top)
+            .offset(y: 20)
         }
         .sheet(isPresented: $showingAddView, content: {
             AddView(activities: activities)

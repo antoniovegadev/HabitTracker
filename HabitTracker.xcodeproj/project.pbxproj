@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2077319264CC6ED00BD8E38 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2077318264CC6ED00BD8E38 /* CircleView.swift */; };
 		E25134782644402200F8AAD0 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25134772644402200F8AAD0 /* HabitTrackerApp.swift */; };
 		E251347A2644402200F8AAD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25134792644402200F8AAD0 /* ContentView.swift */; };
 		E251347C2644402300F8AAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E251347B2644402300F8AAD0 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2077318264CC6ED00BD8E38 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		E25134742644402200F8AAD0 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25134772644402200F8AAD0 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
 		E25134792644402200F8AAD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				E25134792644402200F8AAD0 /* ContentView.swift */,
+				E2077318264CC6ED00BD8E38 /* CircleView.swift */,
 				E251348C264442CE00F8AAD0 /* AddView.swift */,
 				E29AEBA426444BB800DC92AF /* DetailView.swift */,
 			);
@@ -171,6 +174,7 @@
 				E25134892644406900F8AAD0 /* Activity.swift in Sources */,
 				E251348D264442CE00F8AAD0 /* AddView.swift in Sources */,
 				E251347A2644402200F8AAD0 /* ContentView.swift in Sources */,
+				E2077319264CC6ED00BD8E38 /* CircleView.swift in Sources */,
 				E25134782644402200F8AAD0 /* HabitTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
