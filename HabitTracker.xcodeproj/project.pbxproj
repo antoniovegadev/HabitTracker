@@ -8,28 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E2077319264CC6ED00BD8E38 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2077318264CC6ED00BD8E38 /* CircleView.swift */; };
+		E210D1FC26519C8E00ACDF72 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E210D1FA26519C8E00ACDF72 /* Main.xcdatamodeld */; };
+		E210D1FE26519D2E00ACDF72 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210D1FD26519D2E00ACDF72 /* PersistenceController.swift */; };
+		E210D2002651BB3100ACDF72 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210D1FF2651BB3100ACDF72 /* AddButton.swift */; };
+		E210D2022651BEA200ACDF72 /* AddForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210D2012651BEA200ACDF72 /* AddForm.swift */; };
 		E25134782644402200F8AAD0 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25134772644402200F8AAD0 /* HabitTrackerApp.swift */; };
 		E251347A2644402200F8AAD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25134792644402200F8AAD0 /* ContentView.swift */; };
 		E251347C2644402300F8AAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E251347B2644402300F8AAD0 /* Assets.xcassets */; };
 		E251347F2644402300F8AAD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E251347E2644402300F8AAD0 /* Preview Assets.xcassets */; };
-		E25134892644406900F8AAD0 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25134882644406900F8AAD0 /* Activity.swift */; };
-		E251348B2644410800F8AAD0 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E251348A2644410800F8AAD0 /* Activities.swift */; };
-		E251348D264442CE00F8AAD0 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E251348C264442CE00F8AAD0 /* AddView.swift */; };
-		E29AEBA526444BB800DC92AF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29AEBA426444BB800DC92AF /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2077318264CC6ED00BD8E38 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		E210D1FB26519C8E00ACDF72 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		E210D1FD26519D2E00ACDF72 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		E210D1FF2651BB3100ACDF72 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		E210D2012651BEA200ACDF72 /* AddForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddForm.swift; sourceTree = "<group>"; };
 		E25134742644402200F8AAD0 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25134772644402200F8AAD0 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
 		E25134792644402200F8AAD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E251347B2644402300F8AAD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E251347E2644402300F8AAD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E25134802644402300F8AAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E25134882644406900F8AAD0 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		E251348A2644410800F8AAD0 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
-		E251348C264442CE00F8AAD0 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
-		E29AEBA426444BB800DC92AF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +65,8 @@
 				E25134772644402200F8AAD0 /* HabitTrackerApp.swift */,
 				E25134872644405100F8AAD0 /* Model */,
 				E25134862644404500F8AAD0 /* View */,
+				E210D1FA26519C8E00ACDF72 /* Main.xcdatamodeld */,
+				E210D1FD26519D2E00ACDF72 /* PersistenceController.swift */,
 				E251347B2644402300F8AAD0 /* Assets.xcassets */,
 				E25134802644402300F8AAD0 /* Info.plist */,
 				E251347D2644402300F8AAD0 /* Preview Content */,
@@ -85,8 +87,8 @@
 			children = (
 				E25134792644402200F8AAD0 /* ContentView.swift */,
 				E2077318264CC6ED00BD8E38 /* CircleView.swift */,
-				E251348C264442CE00F8AAD0 /* AddView.swift */,
-				E29AEBA426444BB800DC92AF /* DetailView.swift */,
+				E210D1FF2651BB3100ACDF72 /* AddButton.swift */,
+				E210D2012651BEA200ACDF72 /* AddForm.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,8 +96,6 @@
 		E25134872644405100F8AAD0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E25134882644406900F8AAD0 /* Activity.swift */,
-				E251348A2644410800F8AAD0 /* Activities.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,12 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E251348B2644410800F8AAD0 /* Activities.swift in Sources */,
-				E29AEBA526444BB800DC92AF /* DetailView.swift in Sources */,
-				E25134892644406900F8AAD0 /* Activity.swift in Sources */,
-				E251348D264442CE00F8AAD0 /* AddView.swift in Sources */,
+				E210D1FE26519D2E00ACDF72 /* PersistenceController.swift in Sources */,
 				E251347A2644402200F8AAD0 /* ContentView.swift in Sources */,
 				E2077319264CC6ED00BD8E38 /* CircleView.swift in Sources */,
+				E210D2022651BEA200ACDF72 /* AddForm.swift in Sources */,
+				E210D2002651BB3100ACDF72 /* AddButton.swift in Sources */,
+				E210D1FC26519C8E00ACDF72 /* Main.xcdatamodeld in Sources */,
 				E25134782644402200F8AAD0 /* HabitTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +364,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E210D1FA26519C8E00ACDF72 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E210D1FB26519C8E00ACDF72 /* Main.xcdatamodel */,
+			);
+			currentVersion = E210D1FB26519C8E00ACDF72 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E251346C2644402200F8AAD0 /* Project object */;
 }

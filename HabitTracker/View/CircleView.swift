@@ -10,11 +10,10 @@ import SwiftUI
 struct CircleView: View {
     @GestureState var isDetectingLongPress = false
     @State private var done = false
-    @State private var streak = 2
-    let title = "Go to bed".uppercased()
+    @State private var streak = 0
     
     let width: CGFloat
-    let height: CGFloat
+    let title: String
 
     var longPress: some Gesture {
         LongPressGesture(minimumDuration: 1)
@@ -51,18 +50,18 @@ struct CircleView: View {
                     .frame(width: width * 0.45)
                     .padding()
                 
-                Text("\(streak)")
+                Text("\(streak == 0 ? "" : String(streak))")
                     .font(.headline)
                     .bold()
                     .foregroundColor(done ? .white : Color.secondary.opacity(0.55))
-                    .offset(y: height * 0.35)
+                    .offset(y: width * 0.35)
             }
-            .frame(width: width, height: height)
+            .frame(width: width, height: width)
             .contentShape(Circle())
             .gesture(longPress)
             .padding(.bottom, 5)
             
-            Text(title)
+            Text(title.uppercased())
                 .font(.title3)
                 .foregroundColor(.orange)
                 .fontWeight(.bold)
@@ -72,6 +71,6 @@ struct CircleView: View {
 
 struct CircleView_Previews: PreviewProvider {
     static var previews: some View {
-        CircleView(width: 200, height: 200)
+        CircleView(width: 200, title: "Habit1")
     }
 }

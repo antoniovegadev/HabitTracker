@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct HabitTrackerApp: App {
+    let persistenceController = PersistanceController.shared
+//    @Environment(\.scenePhase) var scenePhase
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
+//        .onChange(of: scenePhase) { _ in
+//            persistenceController.save()
+//        }
     }
 }

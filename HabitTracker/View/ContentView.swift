@@ -6,33 +6,41 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
-    @ObservedObject var activities = Activities()
-    @State private var showingAddView = false
-
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(
+        entity: Activity.entity(),
+        sortDescriptors: [NSSortDescriptor(key: "created", ascending: true)]
+    ) var activities: FetchedResults<Activity>
+    
+    @State private var showAddForm = false
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
         GeometryReader { geo in
-            VStack(spacing: geo.size.width * 0.1) {
-                ForEach(0..<3) { _ in
-                    HStack(spacing: geo.size.width * 0.1) {
-                        ForEach(0..<2) { _ in
-                            CircleView(width: geo.size.width * 0.35, height: geo.size.width * 0.35)
-                        }
-                    }
+            LazyVGrid(columns: columns, spacing: 50) {
+                ForEach(activities, id: \.self) { activity in
+                    CircleView(width: geo.size.width * 0.325, title: activity.name ?? "Unknown")
                 }
+                AddButton(tapped: $showAddForm, width: geo.size.width * 0.325)
             }
-            .frame(width: geo.size.width, height: geo.size.height, alignment: .top)
-            .offset(y: 20)
+            .padding(.horizontal, 20)
+            .offset(y: 40)
         }
-        .sheet(isPresented: $showingAddView, content: {
-            AddView(activities: activities)
-        })
+        .sheet(isPresented: $showAddForm) {
+            AddForm()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environment(\.managedObjectContext, PersistanceController.preview.container.viewContext)
     }
 }
